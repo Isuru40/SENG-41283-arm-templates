@@ -54,6 +54,10 @@
             "defaultValue": "sensor-data-backup",
             "type": "String"
         },
+        "components_app_server_lisner_name": {
+            "defaultValue": "app-server-lisner",
+            "type": "String"
+        },
         "components_dashboard_fontend_name": {
             "defaultValue": "dashboard-fontend",
             "type": "String"
@@ -170,7 +174,7 @@
                     "storageAutogrow": "Enabled"
                 },
                 "version": "5.7",
-                "sslEnforcement": "Disabled",
+                "sslEnforcement": "Enabled",
                 "minimalTlsVersion": "TLSEnforcementDisabled",
                 "infrastructureEncryption": "Disabled",
                 "publicNetworkAccess": "Enabled"
@@ -193,6 +197,21 @@
                 "voiceReceivers": [],
                 "logicAppReceivers": [],
                 "azureFunctionReceivers": []
+            }
+        },
+        {
+            "type": "microsoft.insights/components",
+            "apiVersion": "2018-05-01-preview",
+            "name": "[parameters('components_app_server_lisner_name')]",
+            "location": "eastus",
+            "kind": "web",
+            "properties": {
+                "Application_Type": "web",
+                "Flow_Type": "Redfield",
+                "Request_Source": "AppServiceEnablementCreate",
+                "RetentionInDays": 90,
+                "publicNetworkAccessForIngestion": "Enabled",
+                "publicNetworkAccessForQuery": "Enabled"
             }
         },
         {
@@ -2906,8 +2925,8 @@
                 "[resourceId('Microsoft.DBforMySQL/servers', parameters('servers_sensor_data_backup_name'))]"
             ],
             "properties": {
-                "startIpAddress": "175.157.47.131",
-                "endIpAddress": "175.157.47.131"
+                "startIpAddress": "175.15.47.13",
+                "endIpAddress": "175.15.47.13"
             }
         },
         {
@@ -2918,8 +2937,8 @@
                 "[resourceId('Microsoft.DBforMySQL/servers', parameters('servers_sensor_data_backup_name'))]"
             ],
             "properties": {
-                "startIpAddress": "123.231.85.123",
-                "endIpAddress": "123.231.85.123"
+                "startIpAddress": "123.231.85.12",
+                "endIpAddress": "123.231.85.12"
             }
         },
         {
@@ -2930,8 +2949,8 @@
                 "[resourceId('Microsoft.DBforMySQL/servers', parameters('servers_sensor_data_backup_name'))]"
             ],
             "properties": {
-                "startIpAddress": "123.231.84.226",
-                "endIpAddress": "123.231.84.226"
+                "startIpAddress": "123.231.84.22",
+                "endIpAddress": "123.231.84.22"
             }
         },
         {
