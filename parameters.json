@@ -1,0 +1,108 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "profiles_dashboard_name": {
+            "value": null
+        },
+        "sites_kafka_server_name": {
+            "value": null
+        },
+        "serverfarms_funtion_name": {
+            "value": null
+        },
+        "sites_backend_server_name": {
+            "value": null
+        },
+        "sites_nodeserver_bind_name": {
+            "value": null
+        },
+        "frontdoors_frontkey_name": {
+            "value": null
+        },
+        "sites_dashboard_fontend_name": {
+            "value": null
+        },
+        "sites_deviceregisterlog_name": {
+            "value": null
+        },
+        "namespaces_kafka_listner_name": {
+            "value": null
+        },
+        "vaults_dashboardhandler_name": {
+            "value": null
+        },
+        "virtualMachines_kafkaserver_name": {
+            "value": null
+        },
+        "virtualNetworks_kafka_server_name": {
+            "value": null
+        },
+        "servers_sensor_data_backup_name": {
+            "value": null
+        },
+        "components_dashboard_fontend_name": {
+            "value": null
+        },
+        "components_deviceregisterlog_name": {
+            "value": null
+        },
+        "publicIPAddresses_kafka_server_name": {
+            "value": null
+        },
+        "storageAccounts_frontendholder_name": {
+            "value": null
+        },
+        "serverfarms_ASP_smartdashboard_ae63_name": {
+            "value": null
+        },
+        "networkInterfaces_kafkaserver141_name": {
+            "value": null
+        },
+        "publicIPAddresses_kafkaserver_ip_name": {
+            "value": null
+        },
+        "azureFirewalls_kafka_server_guard_name": {
+            "value": null
+        },
+        "virtualNetworks_smart_dashboard_vnet_name": {
+            "value": null
+        },
+        "networkSecurityGroups_kafkaserver_nsg_name": {
+            "value": null
+        },
+        "privateEndpoints_kfka_node_private_end_name": {
+            "value": null
+        },
+        "storageAccounts_storageaccountsmartaaac_name": {
+            "value": null
+        },
+        "actionGroups_Application_Insights_Smart_Detection_name": {
+            "value": null
+        },
+        "smartdetectoralertrules_failure_anomalies___nodeserver_kafka_name": {
+            "value": null
+        },
+        "smartdetectoralertrules_failure_anomalies___dashboard_fontend_name": {
+            "value": null
+        },
+        "smartdetectoralertrules_failure_anomalies___deviceregisterlog_name": {
+            "value": null
+        },
+        "smartdetectoralertrules_failure_anomalies___node_server_kafka_listner_name": {
+            "value": null
+        },
+        "networkInterfaces_kfka_node_private_end_nic_0176929a_48dc_4dbe_a19d_35c9612fdf0c_name": {
+            "value": null
+        },
+        "components_nodeserver_kafka_externalid": {
+            "value": null
+        },
+        "components_node_server_kafka_listner_externalid": {
+            "value": null
+        },
+        "serverfarms_ASP_test_83de_externalid": {
+            "value": null
+        }
+    }
+}
